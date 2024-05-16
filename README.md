@@ -1,4 +1,4 @@
-## 🕹️ Jogo do Número Secreto (Em desenvolvimento)
+## 🕹️ Jogo do Número Secreto
 ### 📑 Funcionalidades
 - Geração aleatória de um número secreto dentro de um intervalo definido.
 - Interface simples para o jogador inserir suas tentativas.
