@@ -5,6 +5,7 @@
 - Feedback sobre as tentativas (maior, menor ou igual ao número secreto).
 - Contagem do número de tentativas feitas pelo jogador.
 - Opção de reiniciar o jogo para uma nova rodada.
+- Síntese de voz para fornecer feedback auditivo ao jogador.
 
 ### ❓ Como Jogar
 1. O jogo irá gerar um número secreto entre 1 e 100.
@@ -18,6 +19,9 @@
 - JavaScript
 - HTML
 - CSS
+- Biblioteca responsiveVoice
 
 ### 👀 Visualização
-Você pode visualizar o meu projeto [aqui](https://js-game-flame.vercel.app)
+- Você pode visualizar o meu projeto [aqui](https://js-game-flame.vercel.app)
+- Ao acessar a página, você pode encontrar uma janela pop-up com os botões "deny" e "allow". Para ativar a funcionalidade de síntese de voz do jogo, certifique-se de selecionar a opção "allow". Recomendo utilizar o navegador Google Chrome pois o suporte para síntese de voz varia entre navegadores.
+- Para uma experiência melhor, recomendo também ativar o som em seu dispositivo.
