@@ -24,4 +24,4 @@
 ### 👀 Visualização
 - Você pode visualizar o meu projeto [aqui](https://js-game-flame.vercel.app)
 - Ao acessar a página, você pode encontrar uma janela pop-up com os botões "deny" e "allow". Para ativar a funcionalidade de síntese de voz do jogo, certifique-se de selecionar a opção "allow". Recomendo utilizar o navegador Google Chrome pois o suporte para síntese de voz varia entre navegadores.
-- Para uma experiência melhor, recomendo também ativar o som em seu dispositivo.
+- Caso realmente opte por utilizar a síntese de voz do jogo, não se esqueça de ativar o som em seu dispositivo.
