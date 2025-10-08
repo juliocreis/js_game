@@ -1,5 +1,5 @@
 let listaNumerosSorteados = []; // Criando uma lista para armazenar os números sorteados
-let numeroLimite = 10; // Variável para o número máximo que se pode sortear
+let numeroLimite = 100; // Variável para o número máximo que se pode sortear
 let numeroSecreto = gerarNumeroAleatorio(); // Armazenando o número aleatório na variável
 let tentativa = 1; // Variável para armazenar a quantidade de tentativas
 let botaoNovoJogoHabilitado = 
