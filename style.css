@@ -6,24 +6,11 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #00ff00, #ffff00);
+    background-color: black;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-body::before {
-    /* background-image: url("img/code.png"); */
-    background-repeat: no-repeat;
-    background-position: right;
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
 }
 
 .container {
@@ -52,7 +39,8 @@ body::before {
     padding: 3rem;
 }
 
-.container__botao {
+.container__botao-chutar,
+.container__botao-novo-jogo {
     border-radius: 16px;
     background: #17740C;
     padding: 16px 24px;
@@ -61,6 +49,16 @@ body::before {
     font-weight: 700;
     border: none;
     margin-top: 2rem;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.container__botao-chutar:hover:not(:disabled),
+.container__botao-novo-jogo:hover:not(:disabled) {
+    background: #0e4707;
 }
 
 .container__texto {

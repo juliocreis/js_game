@@ -2,6 +2,7 @@ let listaNumerosSorteados = []; // Criando uma lista para armazenar os números 
 let numeroLimite = 10; // Variável para o número máximo que se pode sortear
 let numeroSecreto = gerarNumeroAleatorio(); // Armazenando o número aleatório na variável
 let tentativa = 1; // Variável para armazenar a quantidade de tentativas
+let botaoNovoJogoHabilitado = 
 console.log(numeroSecreto); // Para mostrar o número secreto no console do navegador
 
 function exibirTextoNaTela (tag, texto){
@@ -20,13 +21,12 @@ mensagemInicial();
 
 function verificarChute() {
     let chute = document.querySelector('input').value
-    console.log(chute == numeroSecreto);
+    document.getElementById('reiniciar').removeAttribute('disabled');
     if(chute == numeroSecreto){
         let palavraTentativa = tentativa > 1 ? 'tentativas' : 'tentativa';
         let mensagemTentativa = `Você descobriu o número secreto com ${tentativa} ${palavraTentativa}!`;
         exibirTextoNaTela('h1', 'Acertou!');
         exibirTextoNaTela('p', mensagemTentativa);
-        document.getElementById('reiniciar').removeAttribute('disabled');
     } else if(chute > numeroSecreto){
         exibirTextoNaTela('p', 'O número secreto é menor');
     } else{
@@ -41,7 +41,7 @@ function gerarNumeroAleatorio (){
     let quantidadeDeNumerosNaLista = listaNumerosSorteados.length
 
     if(quantidadeDeNumerosNaLista == numeroLimite){
-        listaNumerosSorteados = [];
+        listaNumerosSorteados = []; // Esvaziar array
     }
 
     if(listaNumerosSorteados.includes(numeroEscolhido)){
